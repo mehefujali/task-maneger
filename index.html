@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+      <script src="https://kit.fontawesome.com/8ddf321cf8.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://kit.fontawesome.com/8ddf321cf8.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+            tailwind.config = {
+                  theme: {
+                        extend: {
+                              colors: {
+                                    'primary-cololr': '#314A71',
+                                    'secndery-color': '00ff00'
+                              }
+                        }
+                  }
+            }
+      </script>
+
 </head>
 
 <body>
+      <!-- main started  -->
+      <header>
+            <nav class=" bg-primary-cololr p-3">
+                  <div class=" flex justify-between items-center">
+                        <div class="  flex items-center gap-4">
+                              <button class="font-xl bg-slate-200 rounded w-fit p-2 font-bold">TM</button>
+                              <p class=" text-white cursor-pointer">file</p>
+                        </div>
+                        <div>
+                              <p class=" text-white text-2xl"><i class="fa-solid fa-bars"></i></p>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+      <main>
+            <!-- side bar  -->
+            <section
+                  class=" md:w-3/12 xl:w-2/12 h-full  border-r-2  border-primary-cololr fixed  bg-primary-cololr bg-opacity-10 overflow-auto">
+                  <div class=" w-10/12 mx-auto">
+                        <div class="  mx-auto mt-2  ">
+                              <button id="create-task-btn"
+                                    class=" btn w-full  xl:text-xl bg-primary-cololr  text-white ">Create new task
+                                    +</button>
+
+                        </div>
+                        <!-- form  -->
+
+                        <div class=" mt-5  hidden" id="task-form">
+                              <input type="text" placeholder="Task name"
+                                    class=" input w-full border-primary-cololr bg-transparent" name="" id="">
+                              <textarea name="" cols="" rows="6"
+                                    class=" bg-transparent mt-4 p-3 w-full resize-none  border border-primary-cololr rounded-lg border-1"
+                                    id="" placeholder=" Description 20 words"></textarea>
+
+
+                              <div class=" mt-6 flex items-center justify-between flex-wrap gap-2">
+                                    <button class=" bg-[#314571] w-7 h-7 rounded-full"></button>
+                                    <button class=" bg-[#313d71] w-7 h-7 rounded-full"></button>
+                                    <button class=" bg-[#316D71] w-7 h-7 rounded-full"></button>
+                                    <button class=" bg-[#716531] w-7 h-7 rounded-full"></button>
+                                    <button class=" bg-[#4a3171] w-7 h-7 rounded-full"></button>
+                                    <button class=" bg-[#713331] w-7 h-7 rounded-full"></button>
+
+
+
+                              </div>
+                              <button class="btn w-full mt-6  text-xl bg-primary-cololr text-white">Save</button>
+                        </div>
+                  </div>
+            </section>
+
+            <section class=" ml-[17%] ">
+
+            </section>
+      </main>
+
+      <!-- script  -->
+      <script src="./js/script.js"></script>
 
 </body>
 
