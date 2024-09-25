@@ -27,7 +27,7 @@
 
 <body>
       <!-- main started  -->
-      <header>
+      <header class=" ">
             <nav class=" bg-primary-cololr p-3">
                   <div class=" flex justify-between items-center">
                         <div class="  flex items-center gap-4">
@@ -62,12 +62,13 @@
 
 
                               <div class=" mt-6 flex items-center justify-between flex-wrap gap-2">
-                                    <button class=" bg-[#314571] w-7 h-7 rounded-full"></button>
-                                    <button class=" bg-[#313d71] w-7 h-7 rounded-full"></button>
-                                    <button class=" bg-[#316D71] w-7 h-7 rounded-full"></button>
-                                    <button class=" bg-[#716531] w-7 h-7 rounded-full"></button>
-                                    <button class=" bg-[#4a3171] w-7 h-7 rounded-full"></button>
-                                    <button class=" bg-[#713331] w-7 h-7 rounded-full"></button>
+                                    <button name="btn-1" value="#314571"
+                                          class=" bg-[#314571] w-7 h-7 rounded-full color"></button>
+                                    <button value="#313d71" class=" bg-[#313d71] w-7 h-7 rounded-full color"></button>
+                                    <button value="#316D71" class=" bg-[#316D71] w-7 h-7 rounded-full color"></button>
+                                    <button value="#716531" class=" bg-[#716531] w-7 h-7 rounded-full color"></button>
+                                    <button value="#4a3171" class=" bg-[#4a3171] w-7 h-7 rounded-full color"></button>
+                                    <button value="#713331" class=" bg-[#713331] w-7 h-7 rounded-full color"></button>
 
 
 
@@ -81,10 +82,12 @@
             <!-- task section  -->
 
             <section class=" ml-[26%] xl:ml-[17%]   ">
-                  <div class=" grid grid-cols-5 gap-7 fixed overflow-y-scroll h-full scrolbar w-11/12 mx-auto mt-8 r"
-                        id="task-container">
+                  <div
+                        class=" flex flex-wrap gap-7 justify-normal items-baseline overflow-y-scroll h-[90vh]  pt-6 scrolbar w-11/12 mx-auto  r">
 
+                        <div class=" grid grid-cols-4 w-full gap-5" id="task-container">
 
+                        </div>
 
 
                   </div>

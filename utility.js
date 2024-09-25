@@ -5,7 +5,7 @@ function addTask(title, des, color) {
       <div class="  ">
                               <!-- task title  -->
                               <div
-                                    class=" flex items-center justify-between text-2xl text-white font-bold bg-[${color}] p-3 rounded-xl">
+                                    class=" flex  items-center justify-between text-xl text-white font-bold bg-[${color}] p-3 rounded-xl ">
                                     <div><i class="fa-solid fa-trash"></i></div>
                                     <h3>${title}</h3>
                                     <button class="bg-green-500 border-2 border-white w-6 h-6 rounded-full">
@@ -14,8 +14,8 @@ function addTask(title, des, color) {
 
                               </div>
                               <!-- task des  -->
-                              <div class=" mt-6 bg-[${color}] p-3 rounded-xl text-white">
-                                    <p>${des}</p>
+                              <div class="  mt-6 bg-[${color}] p-3 rounded-xl text-white">
+                                    <p >${des}</p>
                               </div>
 
                         </div>

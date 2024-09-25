@@ -10,12 +10,46 @@ document.getElementById('create-task-btn').addEventListener('click', function ()
             taskForm.classList.add('hidden');
       }
 
-
 });
+let taskColor = '#553171'
+const colors = document.getElementsByClassName('color')
 
+for (const color of colors) {
+      color.addEventListener('click', function (event) {
+            for (const cColor of colors) {
+                  cColor.classList.remove('border-2', 'border-red-500')
+            }
+            event.target.classList.add('border-2', 'border-red-500')
+            taskColor = event.target.value
+      })
+}
 document.getElementById('save-btn').addEventListener('click', function () {
       const title = document.getElementById('task-title').value
       const des = document.getElementById('task-des').value
-      const color = '#553171'
-      addTask(title, des, color)
+      if (title !== '' && des !== '') {
+            addTask(title, des, taskColor)
+            document.getElementById('task-title').value = ''
+            document.getElementById('task-des').value = ''
+      }
+      else {
+            if (title === '') {
+                  document.getElementById('task-title').classList.add('border-red-500')
+            }
+            else if (des === '') {
+                  document.getElementById('task-des').classList.add('border-red-500')
+            }
+      }
+
+
+
+})
+
+document.getElementById('task-title').addEventListener('keyup', function (event) {
+      console.log(event);
+
+})
+document.getElementById('task-des').addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+            alert('')
+      }
 })
