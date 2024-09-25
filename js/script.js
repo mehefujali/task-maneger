@@ -9,4 +9,13 @@ document.getElementById('create-task-btn').addEventListener('click', function ()
       else {
             taskForm.classList.add('hidden');
       }
+
+
 });
+
+document.getElementById('save-btn').addEventListener('click', function () {
+      const title = document.getElementById('task-title').value
+      const des = document.getElementById('task-des').value
+      const color = '#553171'
+      addTask(title, des, color)
+})

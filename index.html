@@ -22,6 +22,7 @@
             }
       </script>
 
+
 </head>
 
 <body>
@@ -54,10 +55,10 @@
 
                         <div class=" mt-5  hidden" id="task-form">
                               <input type="text" placeholder="Task name"
-                                    class=" input w-full border-primary-cololr bg-transparent" name="" id="">
+                                    class=" input w-full border-primary-cololr bg-transparent" name="" id="task-title">
                               <textarea name="" cols="" rows="6"
                                     class=" bg-transparent mt-4 p-3 w-full resize-none  border border-primary-cololr rounded-lg border-1"
-                                    id="" placeholder=" Description 20 words"></textarea>
+                                    id="task-des" placeholder=" Description 20 words"></textarea>
 
 
                               <div class=" mt-6 flex items-center justify-between flex-wrap gap-2">
@@ -71,19 +72,30 @@
 
 
                               </div>
-                              <button class="btn w-full mt-6  text-xl bg-primary-cololr text-white">Save</button>
+                              <button class="btn w-full mt-6  text-xl bg-primary-cololr text-white"
+                                    id="save-btn">Save</button>
                         </div>
                   </div>
             </section>
 
-            <section class=" ml-[17%] ">
+            <!-- task section  -->
+
+            <section class=" ml-[26%] xl:ml-[17%]   ">
+                  <div class=" grid grid-cols-5 gap-7 fixed overflow-y-scroll h-full scrolbar w-11/12 mx-auto mt-8 r"
+                        id="task-container">
+
+
+
+
+                  </div>
+
 
             </section>
       </main>
 
       <!-- script  -->
       <script src="./js/script.js"></script>
-
+      <script src="./utility.js"></script>
 </body>
 
 </html>
