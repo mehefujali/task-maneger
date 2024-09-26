@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+<style>
+      /* Container with overflow-y */
+      .custom-scrollbar {
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll;
+
+      }
+
+
+      /* For Firefox */
+      .custom-scrollbar {
+            scrollbar-width: thin;
+            scrollbar-color: #314A71 #ffffff00;
+            scrollbar-arrow-color: transparent;
+            scroll-behavior: smooth;
+
+      }
+</style>
 
 <head>
       <meta charset="UTF-8">
@@ -83,7 +102,7 @@
 
             <section class=" ml-[26%] xl:ml-[17%]   ">
                   <div
-                        class=" flex flex-wrap gap-7 justify-normal items-baseline overflow-y-scroll h-[90vh]  pt-6 scrolbar w-11/12 mx-auto  r">
+                        class=" flex flex-wrap gap-7 justify-normal items-baseline overflow-y-scroll h-[90vh]  pt-6 scrolbar w-full mx-auto  custom-scrollbar">
 
                         <div class=" grid grid-cols-4 w-full gap-5" id="task-container">
 
