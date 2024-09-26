@@ -6,7 +6,7 @@ function addTask(title, des, color) {
                               <!-- task title  -->
                               <div
                                     class="  flex  items-center justify-between text-xl text-white font-bold bg-[${color}] p-3 rounded-xl ">
-                                    <button  class=" cursor-pointer"><i value="delete" class="fa-solid fa-trash " ></i></button>
+                                    <button  class=" cursor-pointer"><i value="delete" class="fa-solid fa-trash w-fit " ></i></button>
                                     <h3>${title}</h3>
                                     <button class="bg-green-500 border-2 border-white w-6 h-6 rounded-full">
 
