@@ -1,12 +1,12 @@
 function addTask(title, des, color) {
       setItemLocal(color, title, des)
-      displayProduct()
+      displayTasks()
 
 }
 
-const displayProduct = () => {
+const displayTasks = () => {
       let tasks = getLocalStorageTask()
-      console.log(tasks);
+      // console.log(tasks);
 
       const taskContainer = document.getElementById('task-container')
       taskContainer.innerHTML = ""
@@ -25,7 +25,11 @@ const displayProduct = () => {
                                       bg-[${task.color}] 
                                       p-3 
                                       rounded-xl ">
-                                    <button  class=" cursor-pointer"><i value="delete" class="fa-solid fa-trash w-fit " ></i></button>
+                                      <button class="cursor-pointer" onclick="removeTaskFormLocal('${task.id}')">
+                                       <i value="delete" class="fa-solid fa-trash w-fit"></i>
+                                     </button>
+
+
                                     <h3>${task.title}</h3>
                                     <button class="bg-green-500 border-2 border-white w-6 h-6 rounded-full">
                                     </button>
@@ -42,4 +46,18 @@ const displayProduct = () => {
       })
 }
 
-displayProduct()
+displayTasks()
+
+const removeTaskFormLocal = (id) => {
+      console.log(id);
+
+      const localtasks = getLocalStorageTask()
+
+
+      const newTasks = localtasks.filter(task => id != task.id)
+      console.log(newTasks);
+
+      localStorage.setItem("task", JSON.stringify(newTasks))
+      displayTasks()
+
+}

@@ -4,7 +4,7 @@ const getLocalStorageTask = () => {
       if (gettask) {
             localtask = JSON.parse(gettask)
       }
-      console.log(localtask);
+      // console.log(localtask);
       return localtask
 
 
@@ -17,6 +17,7 @@ const getLocalStorageTask = () => {
 const setItemLocal = (color, title, des) => {
       const task = getLocalStorageTask()
       const newTask = {
+            id: Date.now(),
             color,
             title,
             des

@@ -54,12 +54,12 @@ document.getElementById('save-btn').addEventListener('click', function () {
 
 const tasks = document.getElementById('task-container')
 
-tasks.addEventListener('click', function (event) {
-      const deleteBtn = event.target.attributes.value.value;
-      if (deleteBtn === deleteBtn) {
-            event.target.parentNode.parentNode.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode.parentNode.parentNode)
-      }
+// tasks.addEventListener('click', function (event) {
+//       const deleteBtn = event.target.attributes.value.value;
+//       if (deleteBtn === deleteBtn) {
+//             event.target.parentNode.parentNode.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode.parentNode.parentNode)
+//       }
 
 
-})
+// })
 
