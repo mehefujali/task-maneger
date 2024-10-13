@@ -61,57 +61,69 @@
       </header>
       <main>
             <!-- side bar  -->
-            <section
-                  class=" md:w-3/12 xl:w-2/12 h-full  border-r-2  border-primary-cololr fixed  bg-primary-cololr bg-opacity-10 overflow-auto">
-                  <div class=" w-10/12 mx-auto">
-                        <div class="  mx-auto mt-2  ">
-                              <button id="create-task-btn"
-                                    class=" btn w-full  xl:text-xl bg-primary-cololr  text-white ">Create new task
-                                    +</button>
-
-                        </div>
-                        <!-- form  -->
-
-                        <div class=" mt-5  hidden" id="task-form">
-                              <input type="text" placeholder="Task name"
-                                    class=" input w-full border-primary-cololr bg-transparent" name="" id="task-title">
-                              <textarea name="" cols="" rows="6"
-                                    class=" bg-transparent mt-4 p-3 w-full resize-none  border border-primary-cololr rounded-lg border-1"
-                                    id="task-des" placeholder=" Description 20 words"></textarea>
-
-
-                              <div class=" mt-6 flex items-center justify-between flex-wrap gap-2">
-                                    <button name="btn-1" value="#314571"
-                                          class=" bg-[#314571] w-7 h-7 rounded-full color"></button>
-                                    <button value="#313d71" class=" bg-[#313d71] w-7 h-7 rounded-full color"></button>
-                                    <button value="#316D71" class=" bg-[#316D71] w-7 h-7 rounded-full color"></button>
-                                    <button value="#716531" class=" bg-[#716531] w-7 h-7 rounded-full color"></button>
-                                    <button value="#4a3171" class=" bg-[#4a3171] w-7 h-7 rounded-full color"></button>
-                                    <button value="#713331" class=" bg-[#713331] w-7 h-7 rounded-full color"></button>
-
-
+            <section class=" grid grid-cols-12">
+                  <section
+                        class=" col-span-12 md:col-span-3 xl:col-span-2  border-r-2  border-primary-cololr   bg-primary-cololr bg-opacity-10 ">
+                        <div class=" w-10/12 mx-auto">
+                              <div class="  mx-auto mt-2  ">
+                                    <button id="create-task-btn"
+                                          class=" btn text-nowrap md:w-full  xl:text-xl bg-primary-cololr  text-white ">Create
+                                          new
+                                          task
+                                          +</button>
 
                               </div>
-                              <button class="btn w-full mt-6  text-xl bg-primary-cololr text-white"
-                                    id="save-btn">Save</button>
+                              <!-- form  -->
+
+                              <div class=" mt-5 bg-white border-primary-cololr border  hidden absolute md:static w-9/12 md:w-full backdrop-blur-xl p-4 rounded-lg "
+                                    id="task-form">
+                                    <input type="text" placeholder="Task name"
+                                          class=" focus:outline-none  input w-full border-primary-cololr bg-transparent"
+                                          name="" id="task-title">
+                                    <textarea name="" cols="" rows="6"
+                                          class=" bg-transparent mt-4 p-3 w-full resize-none  border border-primary-cololr rounded-lg border-1"
+                                          id="task-des" placeholder=" Description 20 words"></textarea>
+
+
+                                    <div class=" mt-6 flex items-center justify-between flex-wrap gap-2">
+                                          <button name="btn-1" value="#314571"
+                                                class=" bg-[#314571] w-7 h-7 rounded-full color"></button>
+                                          <button value="#313d71"
+                                                class=" bg-[#313d71] w-7 h-7 rounded-full color"></button>
+                                          <button value="#316D71"
+                                                class=" bg-[#316D71] w-7 h-7 rounded-full color"></button>
+                                          <button value="#716531"
+                                                class=" bg-[#716531] w-7 h-7 rounded-full color"></button>
+                                          <button value="#4a3171"
+                                                class=" bg-[#4a3171] w-7 h-7 rounded-full color"></button>
+                                          <button value="#713331"
+                                                class=" bg-[#713331] w-7 h-7 rounded-full color"></button>
+
+
+
+                                    </div>
+                                    <button class="btn w-full mt-6  text-xl bg-primary-cololr text-white"
+                                          id="save-btn">Save</button>
+                              </div>
                         </div>
-                  </div>
-            </section>
+                  </section>
 
-            <!-- task section  -->
+                  <!-- task section  -->
 
-            <section class=" ml-[26%] xl:ml-[17%]   ">
-                  <div
-                        class=" flex flex-wrap gap-7 justify-normal items-baseline overflow-y-scroll h-[90vh]  pt-6 scrolbar w-full mx-auto  custom-scrollbar">
+                  <section class=" col-span-12 md:col-span-9 xl:col-span-10    ">
+                        <div
+                              class=" w-11/12 mx-auto flex flex-wrap gap-7 justify-normal items-baseline overflow-y-scroll h-[90vh]  pt-6 scrolbar   custom-scrollbar">
 
-                        <div class=" grid grid-cols-4 w-full gap-5" id="task-container">
+                              <div class=" grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 w-full gap-5"
+                                    id="task-container">
+
+                              </div>
+
 
                         </div>
 
 
-                  </div>
-
-
+                  </section>
             </section>
       </main>
 
