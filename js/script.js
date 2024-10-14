@@ -1,13 +1,13 @@
-let clicked = false;
+
 document.getElementById('create-task-btn').addEventListener('click', function () {
-      clicked = !clicked;
+
       const taskForm = document.getElementById('task-form');
-      if (clicked) {
-            taskForm.classList.remove('hidden');
-      }
-      else {
-            taskForm.classList.add('hidden');
-      }
+
+      taskForm.classList.remove('hidden');
+
+
+
+
 });
 let taskColor = '#553171'
 const colors = document.getElementsByClassName('color')
@@ -29,6 +29,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
             document.getElementById('task-title').value = ''
             document.getElementById('task-des').value = ''
             document.getElementById('task-form').classList.add('hidden')
+
       }
       else {
             if (title === '') {
