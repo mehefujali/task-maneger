@@ -28,6 +28,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
             addTask(title, des, taskColor)
             document.getElementById('task-title').value = ''
             document.getElementById('task-des').value = ''
+            document.getElementById('task-form').classList.add('hidden')
       }
       else {
             if (title === '') {
@@ -35,6 +36,10 @@ document.getElementById('save-btn').addEventListener('click', function () {
             }
             else if (des === '') {
                   document.getElementById('task-des').classList.add('border-red-500')
+            }
+            else {
+                  document.getElementById('task-title').classList.add('border-black')
+                  document.getElementById('task-des').classList.add('border-black')
             }
       }
 
@@ -46,3 +51,4 @@ document.getElementById('save-btn').addEventListener('click', function () {
 const tasks = document.getElementById('task-container')
 
 
+console.log("%c This is a secret message!", "color: cyan; font-size: 20px; background: black; padding: 10px;");
