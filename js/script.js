@@ -6,8 +6,6 @@ document.getElementById('create-task-btn').addEventListener('click', function ()
       taskForm.classList.remove('hidden');
 
 
-
-
 });
 let taskColor = '#553171'
 const colors = document.getElementsByClassName('color')
